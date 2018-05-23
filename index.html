@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <title>1664 Blanc</title>
+    <meta name="author" content="Adtile">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+    <header>
+        <a href="index.html" class="logo" data-scroll> <img alt="" width="53" height="60" src="img/K1664-Blanc-CMYK.jpg"></a>
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    </header>
+
+
+    <section id="flex-index">
+        <div class="flexIndex">
+            <h1 class="indexMargin">1664 Blanc</h1>
+            <h4 class="indexHvid">Velkommen til 1664 Blanc. <br>
+Indtast dit fødselsår</h4>
+            <div class="error"></div>
+            <div class="InputContainer">
+                <div class="ContainerInputfield1">
+                    <p class="inputField">1</p>
+                </div>
+                <div class="ContainerInputfield2">
+                    <p class="inputField">9</p>
+                </div>
+                <input type="text" class="inputField1 inputField" pattern="\d{1}" maxlength="1">
+                <input type="text" class="inputField2 inputField" pattern="\d{1}" maxlength="1">
+            </div>
+            <button class="btnSubmit">Gå Videre</button>
+        </div>
+    </section>
+
+
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="js/responsive-nav.js"></script>
+    <script src="js/fastclick.js"></script>
+    <script src="js/scroll.js"></script>
+
+    <script src="js/fixed-responsive-nav.js"></script>
+
+    <script>
+        let inputfield1Over18;
+        let inputfield2Over18;
+
+        let inputfield1 = document.querySelector(".inputField1");
+        inputfield1.onchange = function () {
+            let myPattern = this.pattern;
+            let isValid = this.value.search(myPattern) >= 0;
+
+            if (!(isValid)) {
+                inputfield1Over18 = false;
+                console.log("forkert")
+            } else {
+
+                if (inputfield1.value <= 9) {
+                    inputfield1Over18 = true;
+                    console.log("rigtigt")
+                }
+
+            }
+        }
+
+
+        let inputfield2 = document.querySelector(".inputField2");
+        inputfield2.onchange = function () {
+            let myPattern = this.pattern;
+            let isValid = this.value.search(myPattern) >= 0;
+
+            if (!(isValid)) {
+                inputfield2Over18 = false;
+                console.log("forkert")
+            } else {
+                if (inputfield2.value <= 9) {
+                    inputfield2Over18 = true;
+                    console.log("rigtigt")
+                }
+            }
+        }
+
+
+
+        let btnSubmit = document.querySelector(".btnSubmit")
+        btnSubmit.addEventListener("click", e => {
+
+            if (inputfield1Over18 && inputfield2Over18) {
+                let errorInput = document.querySelector(".error");
+
+                errorInput.innerHTML = ""
+                setTimeout(e => {
+                    window.location.href = 'forside.html';
+                }, 1000)
+            } else if (!inputfield1Over18 && !inputfield2Over18) {
+                let errorInput = document.querySelector(".error");
+
+                errorInput.innerHTML = "*Du er under 18 år eller har du indtastet et bogstav"
+            }
+
+
+        })
+    </script>
+
+
+</body>
+
+</html>
