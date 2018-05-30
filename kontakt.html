@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="da">
+<html>
 
 <head>
     <meta charset="utf-8">
@@ -7,96 +7,278 @@
     <meta name="author" content="Adtile">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/styles.css">
-    <script src="js/responsive-nav.js"></script>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/80243.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/80243.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/80243.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/80243.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/80243.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/80243.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/80243.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/80243.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/80243.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/80243.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/80243.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/80243.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/80243.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!--  Include jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    <!--  Include google maps api -->
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false" type="text/javascript"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.0.9/angular-material.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.0.9/angular-material.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-animate.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-aria.js"></script>
+
+    <!--  Include r360.js and angular lib -->
+    <script src="https://project.route360.net/releases/r360-js/latest-src.js"></script>
+    <script src="https://apps.route360.net/releases/r360-angular/latest-src.js"></script>
 </head>
 
 <body>
-
     <header>
-        <a href="index.html" class="logo" data-scroll> <img alt="" width="53" height="60" src="img/K1664-Blanc-CMYK.jpg"></a>
-        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-
-
-        <nav class="nav-collapse">
-            <ul>
-                <li class="menu-item active"><a href="forside.html" data-scroll>Forside</a></li>
-                <li class="menu-item"><a href="blanc.html" data-scroll>1664 Blanc</a></li>
-                <li class="menu-item"><a href="events.html" data-scroll>Influencer</a></li>
-                <li class="menu-item"><a href="historien.html" data-scroll>Historien</a></li>
-                <li class="menu-item"><a href="kontakt.html" data-scroll>Kontakt</a></li>
-            </ul>
-        </nav>
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="forside.html">Forside</a>
+                <a href="blanc.html">1664 Blanc</a>
+                <a href="events.html">Ambassadør</a>
+                <a href="historien.html">Historien</a>
+                <a href="kontakt.html">Kontakt</a>
+            </div>
+        </div>
+        <span class="hojre" style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        <a href="forside.html" class="logo" data-scroll> <img alt="" width="63" height="64" src="img/80243.png" style="margin-top: 19px;"></a>
     </header>
 
 
-    <section id="blanc3">
-        <!--   <div class="bgimg">
-        </div>-->
-        <!---->
 
-        <div class="padding flex-containerKontakt">
-            <h1>Kontakt os</h1>
+    <section class="flex-ContainerBlanc1">
+        <div class="Blanc4Container fadeInUp">
+            <h1></h1>
+            <h4>        <br><br>
+            </h4>
 
-            <h4 class="">
-Du kan finde vores vejledende priser og vores samhandelsbetingelser på vores webshop Carlsberg Online. Gå ind på www.carlsbergonline.dk, hvor du finder links til vejledende prislister for både On- og Off Trade. Du finder dem under nyttige links, nederst på siden.  
-<br><br>
 
-Hvis du ønsker yderligere information om Carlsberg i Danmark og dine muligheder hos os, eller hvis du ønsker at blive kunde hos os, så kontakt os på nedenstående. </h4>
+
+        </div>
+    </section>
+
+
+
+
+    <section class="flex-ContainerBlanc1">
+        <div class="Blanc1Container fadeInUp">
+            <h1 style="margin-top: -55px; color: #0b3180;font-size: 2.9rem;">Kontakt os</h1>
+            <h4 style="color: #0b3180;font-size: 1.1rem;">Hvis du har spørgsmål angående 1664 Blanc er du velkommen til at kontakte os på mail eller telefon hos Carlsberg Danmark.</h4>
+            <h4 style="color: #0b3180;font-weight: 200;margin-top: 30px;">Du kan finde vores vejledende priser og vores samhandelsbetingelser på vores webshop Carlsberg Online. Gå ind på <a href="https://shop.carlsbergdanmark.dk/AgeGate?agegateReturn=/Login&returnUrl=/" style="color: #0b3180;">www.carlsbergonline.dk</a>, hvor du finder links til vejledende prislister for både On- og Off Trade. <br>Du finder nyttige links nederst på siden.</h4>
 
             <a href="mailto:kundeservice@carlsberg.dk ">
                 <button class="button">Send en mail</button>
-                <td class="button">
-
             </a>
+
+            <div class="margin_bund">
+                <h5>Carlsberg Danmark A/S</h5>
+                <h5>Vesterfælledvej 6</h5>
+                <h5>1750 København V</h5>
+                <br>
+                <h5>Tlf.: +45 3327 3327 </h5>
+                <h5>CVR-nr: 25 50 83 86</h5>
+            </div>
         </div>
     </section>
-    <footer id="lab_social_icon_footer">
-        <div class="container">
 
 
-            <div class="Aligner">
-                <div class="Aligner-item">
-                    <a href="blanc.html" data-scroll>1664 Blanc</a></li>
+
+
+    <section id="flex-ContainerBlancFidt" style="">
+        <div class="parallax1" style="">
+            <div id="map" style="height:370px;">
+                <div ng-app="RainbowExample" ng-controller="RainbowExampleController as vm" class="controls" ng-cloak layout="column" layout-align="start end">
+                    <r360-rainbow travel-time="vm.rainbowConf.travelTime" travel-time-range="vm.rainbowConf.range" color-range="vm.rainbowConf.colorRange"></r360-rainbow>
                 </div>
             </div>
+        </div>
+    </section>
 
 
-            <div class="Aligner">
-                <div class="Aligner-item">
-                    <div class="text-center center-block">
-                        <a href="http://www.instagram.com"><i id="social-fb" class="fa fab fa-instagram fa-2x social"></i></a>
-                        <a href="https://www.facebook.com"><i id="social-fb" class="fa fa-facebook-square fa-2x social"></i></a>
-                        <a <a href="mailto:kundeservice@carlsberg.dk"><i id="social-em" class="fa fa-envelope-square fa-2x social"></i></a>
+
+
+    <footer>
+        <section class="flex-ContainerFooter">
+            <div class="FooterContainer" style=" margin-top: 64px;">
+
+                <div class="OmSektion">
+                    <h4 style="text-align:left;font-family: 'Kronenbourg1664Italic'; margin-bottom: 10px;">Om 1664 Blanc</h4>
+                    <h5 style="text-align: left;">Øllen er fransk hvedeøl, som stammer fra Kronenbourg bryggeriet.</h5>
+                </div>
+
+                <div class="AddressSektion">
+                    <h4 style="text-align:left;font-family: 'Kronenbourg1664Italic'; margin-bottom: 10px;"> Her er vi</h4>
+                    <h5 style="text-align: left;">Carlsberg Danmark A/S</h5>
+                    <h5 style="text-align: left;">Vesterfælledvej 6</h5>
+                    <h5 style="text-align: left;">1750 København V</h5>
+                    <br>
+                    <h5 style="text-align: left;">Tlf.: +45 3327 3327 </h5>
+                    <h5 style="text-align: left;">CVR-nr: 25 50 83 86</h5>
+                </div>
+
+
+                <div class="LinkSektion">
+                    <h4 style="text-align:left;font-family: 'Kronenbourg1664Italic'; margin-bottom: 10px;">Udforsk</h4>
+                    <h5 style="text-align: left;">
+                    <ul>
+                    <li><a href="forside.html">Forside</a></li>
+                    <li><a href="blanc.html">1664 Blanc</a></li>
+                    <li><a href="events.html">Ambassadør</a></li>
+                    <li><a href="historien.html">Historien</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                    </h5>
+                    </ul>
+                </div>
+
+
+                <div class="SocialeMedieSektion" style="margin-bottom: 33px;">
+                    <h4 style="text-align:left;font-family: 'Kronenbourg1664Italic'; margin-bottom: 10px;">Følg os</h4>
+                    <div class="SocialeMedierContainer">
+
+                        <div class="text-center center-block">
+                            <a href="http://www.instagram.com"><i id="social-fb" class="fa fab fa-instagram fa-2x social"></i></a>
+                            <a href="https://www.facebook.com"><i id="social-fb" class="fa fa-facebook-square fa-2x social"></i></a>
+                        </div>
                     </div>
+
                 </div>
             </div>
-
+    </footer>
+    <section class="flex-ContainerFooter">
+        <div class="FooterContainer" style="margin-bottom: 20px;">
             <div class="Aligner">
                 <div class="Aligner-item">
                     <div class="copyright">
-                        <p>©1664 Kronenbourg 2018, All Rights Reserved Wordwide.</p>
+                        <p>©1664 Kronenbourg 2018, All Rights Reserved Wordwide.
+                            <br> Please enjoy 1664 Blanc responibly.</p>
                     </div>
                 </div>
             </div>
         </div>
-    </footer>
+        </div>
+    </section>
+
+
+
+
+
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 
 
 
 
 
 
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+
+        window.sr = ScrollReveal();
+        sr.reveal('.fadeInUp', {
+            duration: 2000,
+            origin: 'bottom'
+        });
+
+        angular.module('RainbowExample', ['ngMaterial', 'ng360'])
+            .controller("RainbowExampleController", function () {
+
+                var vm = this;
+                vm.rainbowConf = {
+                    range: {
+                        times: [5, 10, 15, 20, 25, 30]
+                    },
+                    travelTime: 30,
+                    colorRange: {
+                        name: 'Green to Red',
+                        id: 'default',
+                        colors: ['#006837', '#39B54A', '#8CC63F', '#F7931E', '#F15A24', '#C1272D'],
+                        opacities: [1, 1, 1, 1, 1, 1]
+                    }
+                };
+
+                // Coordinates to center the map
+                var myLatlng = new google.maps.LatLng(55.669494, 12.538732);
+
+                // Other options for the map, pretty much selfexplanatory
+                var mapOptions = {
+                    zoom: 10,
+                    center: myLatlng,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                };
+
+                // Attach a map to the DOM Element, with the defined settings
+                var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+
+                // init the first marker
+                marker = new google.maps.Marker({
+                    position: myLatlng,
+                    draggable: true,
+                    map: map
+                });
+
+                // each map get's it's own polygon layer
+                var colorPolygonLayer = r360.googleMapsPolygonLayer(map);
+
+                // attach the click listeners, action when drag finished
+                google.maps.event.addListener(marker, 'dragend', function (event) {
+                    showPolygons(event.latLng.lat(), event.latLng.lng());
+                });
+
+                showPolygons(myLatlng.lat(), myLatlng.lng());
+
+                function showPolygons(lat, lng) {
+
+                    var travelOptions = r360.travelOptions();
+                    // set the service API-key, this is a demo key
+                    // please sign up and get your own key
+                    travelOptions.setServiceKey('AIzaSyBWU2_Hj2TXQse1UoF11rP5uqaNm8QGbF0');
+                    travelOptions.setServiceUrl('https://service.route360.net/denmark/');
+                    travelOptions.addSource({
+                        lat: lat,
+                        lng: lng
+                    });
+                    travelOptions.setTravelTimes([300, 600, 900, 1200, 1500, 1800]);
+                    travelOptions.setTravelType('transit');
+                    travelOptions.setDate('20150706');
+                    travelOptions.setTime('39000');
+
+                    // call the service
+                    r360.PolygonService.getTravelTimePolygons(travelOptions,
+                        function (polygons) {
+                            colorPolygonLayer.update(polygons);
+                        },
+                        function (status, message) {
+                            console.log("We are currently performing service \
+              maintenance. The service will be available shortly.");
+                        }
+                    );
+                }
+            });
+    </script>
 
 
-
-
-    <script src="js/fastclick.js"></script>
-    <script src="js/scroll.js"></script>
-    <script src="js/fixed-responsive-nav.js"></script>
 </body>
 
 </html>
-
-<style>
-    @import url('https://fonts.googleapis.com/css?family=Cinzel');
-</style>

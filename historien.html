@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="da">
+<html>
 
 <head>
     <meta charset="utf-8">
@@ -7,85 +7,230 @@
     <meta name="author" content="Adtile">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/styles.css">
-    <script src="js/responsive-nav.js"></script>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/80243.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/80243.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/80243.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/80243.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/80243.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/80243.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/80243.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/80243.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/80243.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/80243.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/80243.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/80243.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/80243.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
-
     <header>
-        <a href="index.html" class="logo" data-scroll> <img alt="" width="53" height="60" src="img/K1664-Blanc-CMYK.jpg"></a>
-        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-
-
-        <nav class="nav-collapse">
-            <ul>
-                <li class="menu-item active"><a href="forside.html" data-scroll>Forside</a></li>
-                <li class="menu-item"><a href="blanc.html" data-scroll>1664 Blanc</a></li>
-                <li class="menu-item"><a href="events.html" data-scroll>Events</a></li>
-                <li class="menu-item"><a href="historien.html" data-scroll>Historien</a></li>
-                <li class="menu-item"><a href="kontakt.html" data-scroll>Kontakt</a></li>
-            </ul>
-        </nav>
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="forside.html">Forside</a>
+                <a href="blanc.html">1664 Blanc</a>
+                <a href="events.html">Ambassadør</a>
+                <a href="historien.html">Historien</a>
+                <a href="kontakt.html">Kontakt</a>
+            </div>
+        </div>
+        <span class="hojre" style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        <a href="forside.html" class="logo" data-scroll> <img alt="" width="63" height="64" src="img/80243.png" style="margin-top: 19px;"></a>
     </header>
 
 
-    <section id="flex-ContainerBlanc4">
-        <div class="Blanc4Container">
-            <h1>Historien om øllen</h1>
-            <h4>Lorem Ipsum er ganske enkelt fyldtekst fra print- og typografiindustrien. Lorem Ipsum har været standard fyldtekst siden 1500-tallet, hvor en ukendt trykker sammensatte en tilfældig spalte for at trykke en bog til sammenligning af forskellige skrifttyper.</h4>
-            <img class="center mindre" src="/img/his.jpg" alt="konkurrence">
-            <a href="mailto:kundeservice@carlsberg.dk ">
-                <button class="button">Udforsk 1664</button>
+
+
+    <section id="flex-splashContainer" class="flex-ContainerBlanc1">
+        <div class="Blanc1Container fadeInUp">
+            <h1 style="color: #0b3180;font-size: 2.9rem;">Historien</h1>
+            <h4 style="color: #0b3180;font-size: 1.1rem;">Kronenbourg lager blev født for over 350 år siden i Frankrig, i 1664. </h4>
+            <h4 style="color:#0b3180;font-weight: 200;margin-top: 30px; margin-bottom: 170px; position:relative;">Den først øl var lavet af Jerome Hatt i en tynde. Jerome Hatt åbnede sit bryggeri lige efter han fik sit Master bryggeri deplom. Bryggeriget var placeret i centrum af Strasbourg, kun et stenkast fra den lokale katedral kirke. Lorem Ipsum er ganske enkelt fyldtekst fra print- og typografiindustrien. Lorem Ipsum har været standard fyldtekst siden 1500-tallet, hvor en ukendt trykker sammensatte en tilfældig spalte for at trykke en bog til sammenligning af forskellige skrifttyper. Lorem Ipsum har ikke alene overlevet fem århundreder, men har også vundet indpas i elektronisk typografi uden væsentlige ændringer. Sætningen blev gjordt kendt i 1960'erne med lanceringen af Letraset-ark, som indeholdt afsnit med Lorem Ipsum, og senere med layoutprogrammer som Aldus PageMaker, som også indeholdt en udgave af Lorem Ipsum.
+            <a href="#flex-ContainerBlanc2">
+                <span class="btnNextSektion" style="top: 350px;"></span></a>
+            </h4>
+
+
         </div>
     </section>
 
 
-    <footer id="lab_social_icon_footer">
-        <div class="container">
-
-
-            <div class="Aligner">
-                <div class="Aligner-item">
-                    <a href="blanc.html" data-scroll>1664 Blanc</a></li>
-                </div>
+    <section id="flex-ContainerBlancSidt" style="">
+        <div class="parallax7" style="">
+            <div class="Blanc1Container fadeInUp" style="max-width: 100% !important;">
             </div>
+        </div>
+    </section>
 
 
-            <div class="Aligner">
-                <div class="Aligner-item">
-                    <div class="text-center center-block">
-                        <a href="http://www.instagram.com"><i id="social-fb" class="fa fab fa-instagram fa-2x social"></i></a>
-                        <a href="https://www.facebook.com"><i id="social-fb" class="fa fa-facebook-square fa-2x social"></i></a>
-                        <a <a href="mailto:kundeservice@carlsberg.dk"><i id="social-em" class="fa fa-envelope-square fa-2x social"></i></a>
+
+
+    <section class="flex-ContainerBlanc1">
+        <div class="Blanc1Container fadeInUp">
+            <h1 style="color: #0b3180;font-size: 2.3rem; text-align:center;">Navnet blev "Kronenbourg"</h1>
+            <h4 style="color:#0b3180;font-weight: 200;margin-top: 30px; margin-bottom: 110px;">I 1922 ændrede Hatt Brewery bryggerigets navn til Tigre Bock, det mest kendte mærke af Tiger Brewery, som den havde erhvervet til at blive den førende brygger i Alsace. Efter anden verdenskrig blev Kronenbourg navnet på virksomheden og begyndte international ekspansion. Lorem Ipsum har været standard fyldtekst siden 1500-tallet, hvor en ukendt trykker sammensatte en tilfældig spalte for at trykke en bog til sammenligning af forskellige skrifttyper. Lorem Ipsum har ikke alene overlevet fem århundreder, men har også vundet indpas i elektronisk typografi uden væsentlige ændringer. Sætningen blev gjordt kendt i 1960'erne med lanceringen af Letraset-ark, som indeholdt afsnit med Lorem Ipsum, og senere med layoutprogrammer som Aldus PageMaker, som også indeholdt en udgave af Lorem Ipsum.</h4>
+        </div>
+    </section>
+
+
+    <section id="flex-ContainerBlancSidt" style="">
+        <div class="parallax6" style="">
+            <div class="Blanc1Container fadeInUp" style="max-width: 100% !important;">
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="flex-ContainerBlanc1">
+        <div class="Blanc1Container fadeInUp">
+            <h1 style="color: #0b3180;font-size: 2.3rem; text-align:center;">1664 blev født i 1952</h1>
+            <h4 style="color:#0b3180;font-weight: 200;margin-top: 30px;  margin-bottom: 110px;">Kronenbourg 1664 er den eneste øl i verden, som faktisk blev lavet i 1952 til fejring af den kommende droning, droning Elizabeth d. 2 af Storbritanien. 1664 er en special brygget øl med en unik aroma, som i dag er Frankring's nr. 1 Premium Lager øl og nydes af over 70 lande på verdensplan. Lorem Ipsum har været standard fyldtekst siden 1500-tallet, hvor en ukendt trykker sammensatte en tilfældig spalte for at trykke en bog til sammenligning af forskellige skrifttyper. Lorem Ipsum har ikke alene overlevet fem århundreder, men har også vundet indpas i elektronisk typografi uden væsentlige ændringer. Sætningen blev gjordt kendt i 1960'erne med lanceringen af Letraset-ark, som indeholdt afsnit med Lorem Ipsum, og senere med layoutprogrammer som Aldus PageMaker, som også indeholdt en udgave af Lorem Ipsum.</h4>
+            <!--            <img class="center mindre" style="margin-bottom: 91px;" src="img/queen1.jpg" alt="konkurrence">-->
+        </div>
+    </section>
+
+
+    <section id="flex-ContainerBlancSidt" style="">
+        <div class="parallax5" style="">
+            <div class="Blanc1Container fadeInUp" style="max-width: 100% !important;">
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="flex-ContainerBlanc1">
+        <div class="Blanc1Container fadeInUp">
+            <h1 style="color: #0b3180;font-size: 2.3rem; text-align:center;">Én blev til to</h1>
+            <h4 style="color:#0b3180;font-weight: 200;margin-top: 30px;">Kronenbourg 1664 "Blanc" lanceredes i 2006, som et nyt og spændende alternativ. Brygget i stil med de belgiske hvedeøl, der på fransk kaldes blanc, men har sin helt egen profil i Kronenbourg bryggeriet bl.a. med en mere sød og rund fylde. Øllet fremstår uklart og hvidgyldent med et friskt syrligt bid en herlig duft af citrus og sødlig frugtighed.</h4>
+            <img class="center mindre" style="margin-bottom: 31px; box-shadow: none;" src="img/10.png" alt="konkurrence">
+            <a href="blanc.html" style="margin-bottom: 91px">
+                <button class="button">Udforsk 1664 Blanc</button>
+            </a>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <footer>
+        <section class="flex-ContainerFooter">
+            <div class="FooterContainer" style=" margin-top: 64px;">
+
+                <div class="OmSektion">
+                    <h4 style="text-align:left;font-family: 'Kronenbourg1664Italic'; margin-bottom: 10px;">Om 1664 Blanc</h4>
+                    <h5 style="text-align: left;">Øllen er fransk hvedeøl, som stammer fra Kronenbourg bryggeriet.</h5>
+                </div>
+
+                <div class="AddressSektion">
+                    <h4 style="text-align:left;font-family: 'Kronenbourg1664Italic'; margin-bottom: 10px;"> Her er vi</h4>
+                    <h5 style="text-align: left;">Carlsberg Danmark A/S</h5>
+                    <h5 style="text-align: left;">Vesterfælledvej 6</h5>
+                    <h5 style="text-align: left;">1750 København V</h5>
+                    <br>
+                    <h5 style="text-align: left;">Tlf.: +45 3327 3327 </h5>
+                    <h5 style="text-align: left;">CVR-nr: 25 50 83 86</h5>
+                </div>
+
+
+                <div class="LinkSektion">
+                    <h4 style="text-align:left;font-family: 'Kronenbourg1664Italic'; margin-bottom: 10px;">Udforsk</h4>
+                    <h5 style="text-align: left;">
+                    <ul>
+                    <li><a href="forside.html">Forside</a></li>
+                    <li><a href="blanc.html">1664 Blanc</a></li>
+                    <li><a href="events.html">Ambassadør</a></li>
+                    <li><a href="historien.html">Historien</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                    </h5>
+                    </ul>
+                </div>
+
+
+                <div class="SocialeMedieSektion" style="margin-bottom: 33px;">
+                    <h4 style="text-align:left;font-family: 'Kronenbourg1664Italic'; margin-bottom: 10px;">Følg os</h4>
+                    <div class="SocialeMedierContainer">
+
+                        <div class="text-center center-block">
+                            <a href="http://www.instagram.com"><i id="social-fb" class="fa fab fa-instagram fa-2x social"></i></a>
+                            <a href="https://www.facebook.com"><i id="social-fb" class="fa fa-facebook-square fa-2x social"></i></a>
+                        </div>
                     </div>
+
                 </div>
             </div>
-
+    </footer>
+    <section class="flex-ContainerFooter">
+        <div class="FooterContainer" style="margin-bottom: 20px;">
             <div class="Aligner">
                 <div class="Aligner-item">
                     <div class="copyright">
-                        <p>©1664 Kronenbourg 2018, All Rights Reserved Wordwide.</p>
+                        <p>©1664 Kronenbourg 2018, All Rights Reserved Wordwide.
+                            <br> Please enjoy 1664 Blanc responibly.</p>
                     </div>
                 </div>
             </div>
-
-
         </div>
-    </footer>
+        </div>
+    </section>
 
 
-
-
-
-
-
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="js/responsive-nav.js"></script>
     <script src="js/fastclick.js"></script>
     <script src="js/scroll.js"></script>
     <script src="js/fixed-responsive-nav.js"></script>
+
+
+
+
+
+
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+        /* Scroll ned til næste sektion */
+
+        let btnNextSektion = document.querySelector(".btnNextSektion");
+        console.log(btnNextSektion);
+
+        btnNextSektion.addEventListener("click", e => {
+            let nextSektion = document.querySelector(".flex-ContainerBlanc1");
+
+            nextSektion.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+        })
+
+
+
+        window.sr = ScrollReveal();
+        sr.reveal('.fadeInUp', {
+            duration: 2000,
+            origin: 'bottom'
+        });
+    </script>
+
+
 </body>
 
 </html>
-
-<style>
-    @import url('https://fonts.googleapis.com/css?family=Cinzel');
-</style>

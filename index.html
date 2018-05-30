@@ -8,6 +8,23 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/80243.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/80243.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/80243.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/80243.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/80243.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/80243.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/80243.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/80243.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/80243.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/80243.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/80243.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/80243.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/80243.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 
 </head>
 
@@ -15,7 +32,7 @@
 <body>
 
     <header>
-        <a href="index.html" class="logo" data-scroll> <img alt="" width="53" height="60" src="img/K1664-Blanc-CMYK.jpg"></a>
+        <a href="index.html" class="logo" data-scroll> <img alt="" width="63" height="64" src="img/80243.png" style="margin-top: 19px;"></a>
         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     </header>
 
@@ -33,7 +50,7 @@ Indtast dit fødselsår</h4>
                 <div class="ContainerInputfield2">
                     <p class="inputField">9</p>
                 </div>
-                <input type="text" class="inputField1 inputField" pattern="\d{1}" maxlength="1">
+                <input type="text" class="inputField1 inputField" pattern="\d{1}" maxlength="1" autofocus>
                 <input type="text" class="inputField2 inputField" pattern="\d{1}" maxlength="1">
             </div>
             <button class="btnSubmit">Gå Videre</button>
@@ -103,11 +120,16 @@ Indtast dit fødselsår</h4>
             } else if (!inputfield1Over18 && !inputfield2Over18) {
                 let errorInput = document.querySelector(".error");
 
-                errorInput.innerHTML = "*Du er under 18 år eller har du indtastet et bogstav"
+                errorInput.innerHTML = "*Du er under 18 år eller du har indtastet et bogstav"
             }
 
 
         })
+        $('input.inputField').on('keyup', function () {
+            if ($(this).val()) {
+                $(this).next().focus();
+            }
+        });
     </script>
 
 

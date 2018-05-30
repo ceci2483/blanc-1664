@@ -661,18 +661,3 @@
     window.responsiveNav = responsiveNav;
 
 }(document, window, 0));
-
-
-
-/* Scroll ned til næste sektion */
-
-let btnNextSektion = document.querySelector(".btnNextSektion");
-
-btnNextSektion.addEventListener("click", e => {
-    let nextSektion = document.querySelector("#flex-ContainerBlanc1");
-
-    nextSektion.scrollIntoView({
-        behavior: "smooth",
-        block: "start"
-    });
-})
